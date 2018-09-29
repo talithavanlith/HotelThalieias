@@ -1,0 +1,93 @@
+<bookings>
+    
+    <booking>
+        <number>101</number>
+        <name>Mr and Mrs Smith</name>
+        <checkin>
+            <day>5</day>
+            <month>October</month>
+            <year>2018</year>
+        </checkin>
+        <checkout>
+            <day>10</day>
+            <month>October</month>
+            <year>2018</year>
+        </checkout>
+    </booking>
+        
+    <booking>
+        <number>202</number>
+        <name>Alice, Bob, and family</name>
+        <checkin>
+            <day>26</day>
+            <month>August</month>
+            <year>2018</year>
+        </checkin>
+        <checkout>
+            <day>29</day>
+            <month>August</month>
+            <year>2018</year>
+        </checkout>
+    </booking>
+    
+    <booking>
+        <number>204</number>
+        <name>Alice, Bob, and family</name>
+        <checkin>
+            <day>30</day>
+            <month>August</month>
+            <year>2018</year>
+        </checkin>
+        <checkout>
+            <day>2</day>
+            <month>September</month>
+            <year>2018</year>
+        </checkout>
+    </booking>
+    
+    <booking>
+        <number>203</number>
+        <name>Carol and Dave</name>
+        <checkin>
+            <day>27</day>
+            <month>September</month>
+            <year>2018</year>
+        </checkin>
+        <checkout>
+            <day>30</day>
+            <month>September</month>
+            <year>2018</year>
+        </checkout>
+    </booking>
+
+    <booking>
+        <number>102</number>
+        <name>Stephen</name>
+        <checkin>
+            <day>27</day>
+            <month>August</month>
+            <year>2018</year>
+        </checkin>
+        <checkout>
+            <day>30</day>
+            <month>August</month>
+            <year>2018</year>
+        </checkout>
+    </booking>
+
+    <booking>
+        <number>303</number>
+        <name>The Miller family</name>
+        <checkin>
+            <day>18</day>
+            <month>November</month>
+            <year>2018</year>
+        </checkin>
+        <checkout>
+            <day>22</day>
+            <month>November</month>
+            <year>2018</year>
+        </checkout>
+    </booking>
+    
+</bookings>
