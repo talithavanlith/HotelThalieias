@@ -1,0 +1,69 @@
+//marker = https://pixabay.com/en/icon-marker-map-black-157354/
+
+var map = (function(){
+    "use strict";
+    var map, centralMarker, northMarker, southMarker;
+
+    var pub = {};
+
+    function onMapClick(e) {
+        alert('You clicked the map at ' + e.latlng);
+    }
+
+    // function centreMap() {
+    //     var markerLocation, markerBounds;
+    //
+    //     if (this.textContent === 'Central') {
+    //         markerLocation = [centralMarker.getLatLng()];
+    //         markerBounds = L.latLngBounds(markerLocation);
+    //         map.fitBounds(markerBounds);
+    //     }else if (this.textContent === 'North') {
+    //         markerLocation = [northMarker.getLatLng()];
+    //         markerBounds = L.latLngBounds(markerLocation);
+    //         map.fitBounds(markerBounds);
+    //     }else if (this.textContent === 'South') {
+    //         markerLocation = [southMarker.getLatLng()];
+    //         markerBounds = L.latLngBounds(markerLocation);
+    //         map.fitBounds(markerBounds);
+    //     }
+    // }
+
+    pub.setup = function() {
+        var  headings, h;
+
+        map = L.map('map').setView([-45.875, 170.500], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            { maxZoom: 18,
+                attribution: 'Map data &copy; ' +
+                    '<a href="http://www.openstreetmap.org/copyright">' +
+                    'OpenStreetMap contributors</a> CC-BY-SA'
+            }).addTo(map);
+
+        southMarker = L.marker([-45.88732, 170.497255]).addTo(map);
+        //southMarker.bindPopup("<img src=\"images/Vertigo.jpg\" alt=\"Vertigo\" width='80px'>" + "<div class='popup-text'> <b>South Store</b><p>Specialising in Alfred Hitchcock</p></div>");
+
+
+        centralMarker = L.marker([-45.873935, 170.503086]).addTo(map);
+        //centralMarker.bindPopup("<img src=\"images/Metropolis.jpg\" alt=\"Metropolis\" width='55px'>" + "<div class='popup-text'> <b>Central Store</b><p>Specialising in Classic Cinema</p></div>");
+
+        northMarker = L.marker([-45.862976, 170.513949]).addTo(map);
+        //northMarker.bindPopup("<img src=\"images/Plan_9_from_Outer_Space.jpg\" alt=\"Plan 8 from Outer Space\" width='80px'>" + "<div class='popup-text'> <b>North Store</b><p>Specialising in Science Fiction <br> and Horror</p></div>");
+
+        map.on('click', onMapClick);
+
+        // headings = document.getElementsByTagName("h3");
+        // for (h = 0; h < headings.length; h+=1) {
+        //     headings[h].onclick = centreMap;
+        //     headings[h].style.cursor = "pointer";
+        // }
+    };
+
+
+
+    return pub;
+
+}());
+
+
+$(document).ready(map.setup);

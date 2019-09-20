@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- COMP212 Assignment Talitha van Lith August 2018 Student ID: vanta342 8078082-->
+    <title>Hotel Thaleias: Find us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="leaflet.css"/>
+    <script src="leaflet.js"></script>
+    <script src="map.js"></script>
+</head>
+<body>
+<!-- Start of University of Otago Tiddlywinks page header -->
+
+<header>
+    <h1 id="header1">Hotel</h1>
+    <figure>
+        <img class="header_image" src="./images/logoSmall.png" alt="Hotel logo" width="80px">
+    </figure>
+    <h1>Thaleias</h1>
+</header>
+<!-- End of University of Otago Tiddlywinks page header -->
+<nav>
+    <ul class="nav">
+        <li class="button"><a href="./index.html"> home </a>
+        </li>
+        <li class="button"><a href="./rooms.html">rooms</a>
+        </li>
+        <li class="button"><a class="active">find us</a>
+        </li>
+        <li class="button"><a href="./book.html">book</a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <h2 id="maptitle">Where we are:</h2>
+    <p class="place"> Epar.Od. Ormou Athiniou &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; No. 750 00 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Santorini, Greece</p>
+    <div id="food_info">
+        <h3>Nearby Eateries:</h3>
+        <ul class="map_list">
+            <li><b class="place">Spartacos Pizzeria:</b> <br> Cosy - Casual - Good for kids <br> $ <br> <br></li>
+            <li><b class="place">Apollon Restaurant:</b> <br> Great Cocktails - Cosy - Late-night food <br> $$$ <br> <br></li>
+            <li><b class="place">Senor Zorba Cafe Bar:</b> <br> Groups - Casual - Vegetarian options <br> $ <br> <br></li>
+        </ul>
+        <!-- Marker switch -->
+        <label class="switch">
+            <input id="food" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <figure id="map">
+        <img src="images/map.png" alt="Hotel Thaleias Map">
+    </figure>
+    <div id="activity_info">
+        <h3>Activities & Attractions:</h3>
+        <ul class="map_list">
+            <li><b class="place">Epar Lookout:</b> <br> Amazing cliff side view over sea - good sunset<br> <br> <br></li>
+            <li><b class="place">Santo Winery:</b> <br> Traditional Greek winery tour - includes lunch<br> $$$ <br> <br></li>
+            <li><b class="place">Ekklisia Agia Marina Church:</b> <br> Greek Orthodox Church - built early 1800s<br> $ <br> <br></li>
+        </ul>
+        <!-- Marker switch -->
+        <label class="switch">
+            <input id="activity" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+</section>
+<footer class="last_p">
+    <p>~~ This website was created for a University project. The content is largely fictional and no services are actually being offered ~~
+    </p>
+</footer>
+</body>
+</html>

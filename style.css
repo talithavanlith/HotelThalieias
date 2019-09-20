@@ -1,0 +1,618 @@
+/* A style sheet for "A Guide to High Quality Web Development" website */
+/* Created by Talitha van Lith, Apr 2017 */
+/* margin/padding: top right bottom left;*/
+/*https://www.behance.net/gallery/29369733/Banthers-Free-Font*/
+/*https://www.behance.net/gallery/14209843/SIMPLIFICA-Typeface-Free*/
+/*https://www.behance.net/gallery/23680875/Monthoers-Free-Font*/
+/*Logo = https://pixabay.com/en/laurel-wreath-accolade-winner-award-304839/*/
+/*Wine and flowers = https://www.pexels.com/photo/breakfast-champagne-hotel-6685/*/
+/*Sunset view = https://unsplash.com/photos/anXrQ-9Og1M*/
+/*Sunset island buildings = https://unsplash.com/photos/e8A7q4dYW3U*/
+/*outside building = https://unsplash.com/photos/gb_TlsaeqWQ*/
+/*outside view white: https://pixabay.com/en/greece-architecture-home-greek-820415/*/
+/*pizza: https://unsplash.com/photos/MQUqbmszGGM*/
+
+/*Church Santorini: https://www.flickr.com/photos/karpidis/14363159838/in/photolist-nTdX1S-4VxNPR-22scLRz-b2Zc3-7wFn6c-3fkit-fjggJP-a4BPJ-4oMjTb-2VTtUZ-5dj4BX-yyuHgA-2kU2kM-6AYS6r-nRu9fb-6QXFpp-FKTnYC-8LwA9R-7nd79-4bpsGg-6N7WYw-7nd1r-6vv83D-4VyjDT-aghpFi-fCXqUh-4aUbgZ-3ofTFk-FygeM-3om4MG-CeMU23-6vzhF5-21qJbhg-n5rsN-2sYFrM-SjRfh1-jzFdB-6WCHgh-6AYTqT-8ZHagu-vXmJss-FyfYx-6Q9aMm-8kXBws-5N77tT-5cbjmT-ZJsNg1-7jePff-8uhcuF-6XF8TP*/
+/*Rooftop umbrella = https://www.flickr.com/photos/karpidis/14363159838/in/photolist-nTdX1S-4VxNPR-22scLRz-b2Zc3-7wFn6c-3fkit-fjggJP-a4BPJ-4oMjTb-2VTtUZ-5dj4BX-yyuHgA-2kU2kM-6AYS6r-nRu9fb-6QXFpp-FKTnYC-8LwA9R-7nd79-4bpsGg-6N7WYw-7nd1r-6vv83D-4VyjDT-aghpFi-fCXqUh-4aUbgZ-3ofTFk-FygeM-3om4MG-CeMU23-6vzhF5-21qJbhg-n5rsN-2sYFrM-SjRfh1-jzFdB-6WCHgh-6AYTqT-8ZHagu-vXmJss-FyfYx-6Q9aMm-8kXBws-5N77tT-5cbjmT-ZJsNg1-7jePff-8uhcuF-6XF8TP*/
+/*Pool side restaurant = https://www.flickr.com/photos/portobaytrade/43171265091/in/photolist-28LU23K-psiDDi-fHgA3c-asystt-BTB6R-bZFRjy-5ThYcf-21CCwPz-cV6s1m-6Dfx7P-MWJHJZ-dKcq1m-ooo8fK-9qoVFT-4vra1U-syaeK9-Y3JZoq-7XQfWD-9d2fxS-4YkfPq-d4LCGE-9Wwjud-5gnHFp-ck7QJo-8Bp97U-4MHXam-dtbfuw-chDirm-4VpuLX-rUD6AJ-85BB3S-o6UukV-4VhgaN-6pfepV-dUG6QV-bzVFkW-4VShKe-NuYXFG-McRwuC-Ai7VUj-4F5fXW-y8w5pE-6ddzvz-dGXUiW-8cY6NK-21u3Z2a-duzrSt-77yubs-jebwX-7XQgFg*/
+/*Spa = https://www.flickr.com/photos/schaerer/22669230522/in/photolist-AxcJs7-9Wwovw-dGXVq5-Qq1wNW-paNRq3-6Wo8pg-dePFJX-4MtwXS-4MHV6E-9cYa46-dePGDd-7N8QiA-cmEHhh-A4t6Ew-rm4SUf-bUnk1F-8cJZ54-UFPWrb-qkQN1-N9rWw-fis2Gh-77xYpQ-QNCC3R-22pRsmU-7MDHUz-bfQzwr-uYfPHn-9XBMkD-QVKxgf-5pzwYp-d4LmXJ-Wvc5bQ-QL11Yh-BTB7P-9o1g6q-cqKbM9-9qoQYT-dKcpJs-fis2od-ntKBcJ-4hcoRo-7LMUeX-9PN2e9-tzkSAd-4MAVcn-5BegC4-hZQvvx-69kkHv-8wSxCj-9EuLK4*/
+/*Sink = https://www.flickr.com/photos/vik_hotels/7453660938/in/photolist-cmDXHu-nz4eyc-nUyEwN-AxcJs7-9Wwovw-dGXVq5-Qq1wNW-paNRq3-6Wo8pg-dePFJX-4MtwXS-4MHV6E-9cYa46-dePGDd-7N8QiA-cmEHhh-A4t6Ew-rm4SUf-bUnk1F-8cJZ54-UFPWrb-qkQN1-N9rWw-fis2Gh-77xYpQ-QNCC3R-22pRsmU-7MDHUz-bfQzwr-uYfPHn-9XBMkD-QVKxgf-5pzwYp-d4LmXJ-Wvc5bQ-QL11Yh-BTB7P-9o1g6q-cqKbM9-9qoQYT-dKcpJs-fis2od-ntKBcJ-4hcoRo-7LMUeX-9PN2e9-tzkSAd-4MAVcn-5BegC4-hZQvvx*/
+/*Bathroom = https://www.flickr.com/photos/cwkarl/40142297541/in/photolist-24aeLwi-7PYvUs-24SiHm-jkPsPe-6s2PfD-SgM6M7-kiEtY-Fq92VW-zapbAj-7rFEZy-8zkWnS-rAw2jV-ShQJFW-R6pDKK-6C2f99-azGZNb-8QGPqD-R3KeJY-M6UVJJ-ShQQCf-nunGWS-3p2HHD-asy9sn-865Vdm-EAWHRp-8AQL8G-Tpzvea-xaQgTM-8jJE9m-7CPMQD-bBGyTr-8CqQam-8cJWMF-xuPxfV-8zzVZ7-xhUC4z-3dsCEt-81t7vz-zziE1s-UUdH5V-4ZxLL4-Co18j-ajZ2ha-DLzWaP-rSSyhx-8AQNz3-xnzcsb-zziLtN-22n2TE7-pj6kZU*/
+/*Santorini = https://www.flickr.com/photos/cwkarl/40142297541/in/photolist-24aeLwi-7PYvUs-24SiHm-jkPsPe-6s2PfD-SgM6M7-kiEtY-Fq92VW-zapbAj-7rFEZy-8zkWnS-rAw2jV-ShQJFW-R6pDKK-6C2f99-azGZNb-8QGPqD-R3KeJY-M6UVJJ-ShQQCf-nunGWS-3p2HHD-asy9sn-865Vdm-EAWHRp-8AQL8G-Tpzvea-xaQgTM-8jJE9m-7CPMQD-bBGyTr-8CqQam-8cJWMF-xuPxfV-8zzVZ7-xhUC4z-3dsCEt-81t7vz-zziE1s-UUdH5V-4ZxLL4-Co18j-ajZ2ha-DLzWaP-rSSyhx-8AQNz3-xnzcsb-zziLtN-22n2TE7-pj6kZU*/
+/*Window view https://www.flickr.com/photos/loozrboy/8622106887/in/photolist-29Zr3me-QPoowz-gyJux-PYcd1J-8nkT81-JS3x88-txJ4Yp-9yQhR-o47Dtb-fGW5Mb-7XjAGD-cB2gAC-666jxc-aBQthD-aBT8Ry-2avkUe-e8UxZi-auxpjq-aCTeR5-9Gm82F-a9Ava5-KquvKE-5M1CYJ-6oo3jM-hgFQ9-bZCGkJ-4BL3fE-9yhJo9-hR5NV-w75aSV-6AkvSP-fT4E4s-b3jLgp-SnZUyo-AHzNXM-5DUW1L-5qyKsU-dhoHp6-aznVqi-8wUUGv-Mc1Mk4-7ntnxm-aoBBn2-eMJpbM-eEmxc7-973B1a-4Agqm9-Ga73sk-8mDoE-jUFhMr*/
+/*Pool2-smaller = https://www.flickr.com/photos/vik_hotels/17980237583/in/photolist-toRqdg-8zkW3f-24MTNH-qNtJWK-8SaDvz-KdppQX-A8nGUF-9jHwDR-bBwcDZ-boKNQj-4WFR1n-24aeLwi-7PYvUs-24SiHm-jkPsPe-6s2PfD-SgM6M7-kiEtY-Fq92VW-zapbAj-7rFEZy-8zkWnS-rAw2jV-ShQJFW-R6pDKK-6C2f99-azGZNb-8QGPqD-R3KeJY-M6UVJJ-ShQQCf-nunGWS-3p2HHD-asy9sn-865Vdm-EAWHRp-8AQL8G-Tpzvea-xaQgTM-8jJE9m-7CPMQD-bBGyTr-8CqQam-8cJWMF-xuPxfV-8zzVZ7-xhUC4z-3dsCEt-81t7vz-zziE1s*/
+/*Logo = https://www.flickr.com/photos/cwkarl/40142297541/in/photolist-24aeLwi-7PYvUs-24SiHm-jkPsPe-6s2PfD-SgM6M7-kiEtY-Fq92VW-zapbAj-7rFEZy-8zkWnS-rAw2jV-ShQJFW-R6pDKK-6C2f99-azGZNb-8QGPqD-R3KeJY-M6UVJJ-ShQQCf-nunGWS-3p2HHD-asy9sn-865Vdm-EAWHRp-8AQL8G-Tpzvea-xaQgTM-8jJE9m-7CPMQD-bBGyTr-8CqQam-8cJWMF-xuPxfV-8zzVZ7-xhUC4z-3dsCEt-81t7vz-zziE1s-UUdH5V-4ZxLL4-Co18j-ajZ2ha-DLzWaP-rSSyhx-8AQNz3-xnzcsb-zziLtN-22n2TE7-pj6kZU*/
+
+
+/* An Art-Deco style font for headings */
+
+@font-face {
+    font-family: 'Monthoers';
+    src: url('fonts/Monthoers.otf') format('opentype'), url('fonts/Monthoers.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Swistblnk';
+    src: url('fonts/Swistblnk_Banthers.otf') format('opentype'),
+    url('fonts/Swistblnk_Banthers.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplifica';
+    src: url('fonts/simple.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    background-color: #f8f8f8;
+    color: #1b1d24;
+    padding: 0px;
+    margin: 0;
+}
+
+/* Specifications of website background*/
+body{
+    background-color: inherit;
+    color: inherit;
+    font-family: Simplifica, ariel, sans-serif;
+    text-align:center;
+    min-height: 400px;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+
+section{
+    padding: 60px 60px 30px 60px;
+}
+
+/*.header_bkg{
+    background-image: url("./images/brick-wall.png");
+    background-repeat: repeat;
+
+}*/
+
+/* Page header specifications */
+header{
+    background-color: #a8cbe5;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+    padding: 0px 0 0 0;
+    color: inherit;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+h1{
+    color: #f8f8f8;
+    background-color: inherit;
+    font-family: Swistblnk, ariel, sans-serif;
+    font-size: 65px;
+    float: left;
+    margin: 0px;
+    padding: 20px 0px 0 0px;
+
+}
+
+#header1{
+    padding: 20px 0px 0px 33%;
+}
+.header_image{
+    color: inherit;
+    background-color: inherit;
+    float: left;
+    padding: 13px 35px 0 20px;
+    margin: 0px;
+}
+/* Page header finishes */
+
+/* navigation */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20% 0 20%;
+    overflow: hidden;
+    background-color: #278bdd;
+    color: #f8f8f8;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: 45px;
+}
+
+li.button {
+    float: left;
+    width: 15%;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    display: block;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* Change the link color to light green on hover */
+li a:hover:not(.active) {
+    background-color: inherit;
+    color: #ea8e2e;
+    text-decoration: underline;
+}
+
+/* Change the active link to be grey */
+.active {
+    background-color: inherit;
+    color: #ea8e2e;
+    text-decoration: underline;
+}
+/* navigation finish */
+
+h2{
+    color: inherit;
+    background-color:inherit;
+    font-family: Simplifica, Arial, sans-serif;
+    clear:left;
+    margin: 130px 0 0 0;
+    padding: 70px 0 30px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3{
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    font-family: Simplifica, ariel, sans-serif;
+    font-size: 35px;
+    padding: 10px 0 0px 0px;
+}
+
+/* Image and text layout on "index.html" page */
+
+.dates{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.roomPic{
+    margin: 60px 0% 0px 0%;
+    padding: 0px;
+    width: 50%;
+    text-align: center;
+    background-color: #e3eef7;
+    height: 500px;
+    float: left;
+}
+
+.room{
+    margin: 60px 0% 50px 0%;
+    padding: 60px 0 0 0;
+    width: 50%;
+    text-align: center;
+    background-color: #e3eef7;
+    height: 440px;
+    float: left;
+
+}
+
+.calendar h3{
+    width: 320px;
+    margin: 80px 0px 20px 105px;
+    font-size: 28px;
+}
+
+.counters_img{
+    float: left;
+    margin:60px 0px 20px 60px;
+}
+/* Image and text layout on "index.html" page finish*/
+
+/* Image and text layout on "about.html" page */
+
+.float_left{
+    float: left;
+    margin: 0px;
+    padding: 0 0 60px 0px;
+}
+
+#text_counters2{
+    margin: 0 0px 0 0px;
+    padding: 0px;
+    width: 550px;
+}
+
+#text_otago{
+    margin: 50px 0px 0 0px;
+    padding: 0px;
+    width: 600px;
+}
+
+#counters2{
+    margin: 0 0px 0 30px;
+    padding: 0px;
+}
+
+#otago{
+    margin: 50px 50px 0 20px;
+    padding: 0px;
+}
+
+img.border{
+    border: 5px solid rgb(19, 60, 172);
+    padding: 0px;
+    margin: 0px;
+}
+
+
+figure{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*map layout*/
+#map{
+    padding: 0;
+    margin: 0 0 70px 0px;
+    width: 50%;
+    height: 500px;
+    float:left;
+    border: 5px solid #278bdd;
+}
+
+#food_info{
+    float:left;
+    background-color: inherit;
+    padding: 20px 40px 0 20px;
+    margin: 0;
+    width: 20%;
+    height:510px;
+    align-content: center;
+}
+
+#activity_info{
+    float:left;
+    background-color: inherit;
+    padding: 20px 0 0 60px;
+    margin: 0;
+    width: 20%;
+    height:510px;
+    align-content: center;
+}
+
+.map_list{
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#maptitle{
+    margin: 80px 0 0 0;
+    padding: 70px 0 30px 0;
+}
+
+.popup-text{
+    font-size: 20px;
+    padding: 0;
+    margin: 0px 0 0 10px;
+    font-family: Simplifica, ariel, sans-serif;
+}
+
+.popup-head{
+    font-size: 25px;
+    padding: 0;
+    margin: 20px 0 0px 0px;
+    font-family: Simplifica, ariel, sans-serif;
+}
+
+.popup_img{
+    padding: 0px 0 0 0;
+    margin: 10px 0 0 0px;
+    border: 2px solid #1b1d24;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 20px 10px 0 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #ea8e2e;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* Image and text layout on "about.html" page finish*/
+
+p{
+    padding: 20px 0 70px 0;
+    margin: 0;
+    font-size: 30px;
+    color: inherit;
+    background-color: inherit;
+}
+
+.options{
+    padding: 5px;
+    margin: 13px;
+    background-color: #a8cbe5;
+    color: #1b1d24;
+    width: 22%;
+    float: left;
+    /*display: block;*/
+}
+
+.options p, .options h3{
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    font-size: 23px;
+}
+
+.optionsTitle{
+    margin: 0px 0 75px 0;
+    padding: 0px;
+}
+
+.roomBooked{
+    padding: 5px;
+    margin: 13px;
+    background-color: #a8cbe5;
+    color: #1b1d24;
+    width: 22%;
+    float: left;
+    /*display: block;*/
+}
+
+.roomBooked p, .roomBooked h3{
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    font-size: 23px;
+}
+
+.booked{
+    margin-top: 20px;
+}
+
+/* Table layout on "rankings.html" page */
+table{
+    border-collapse: collapse;
+    margin: 30px 0 30px 0;
+}
+
+table, th, td {
+    padding: 2px 0px 2px 5px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(225, 225, 225);
+    color: inherit;
+}
+
+.small{
+    width: 80px;
+}
+
+td{
+    width:180px;
+}
+
+th{
+    height: 50px;
+    text-align: left;
+}
+
+.less-margin{
+    padding:0;
+    margin: 180px 0 0 0px;
+}
+/* Table layout on "rankings.html" page finish*/
+
+/* Form layout on "contactus.html" page */
+fieldset{
+    border: 10px solid #278bdd;
+    margin: 0 0 0 12%;
+    align-items: center;
+    padding: 30px;
+    width: 70%;
+    font-size: 30px;
+}
+
+legend{
+    background-color: rgb(255, 202, 99);
+    color: inherit;
+    border: 20px solid rgb(207, 247, 111);
+    padding: 4px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+fieldset ul{
+    padding: 0 0px 15px 50px;
+    list-style-type: none;
+}
+
+#textInputs label{
+    float: left;
+    width: 150px;
+    margin: 10px 0 0 50px;
+    height: 20px;
+}
+
+#textInputs input{
+    float: left;
+    width: 250px;
+    height: 20px;
+    margin: 10px 0 0 50px;
+}
+
+#textInputs li{
+    clear: both;
+    height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.comments{
+    margin-left: 60px;
+}
+
+.radio_buttons li{
+    float: left;
+    padding: 0 120px 20px 50px;
+}
+
+input[type]{
+    outline: none;
+}
+
+input[type]:focus {
+    border: 1.5px solid #ea8e2e;
+}
+
+.buttons li{
+    float: right;
+    margin: 0 40px 20px 0px;
+}
+
+#searchButton{
+    font-size: 20px;
+    color: #f8f8f8;
+    background-color: #ea8e2e;
+    font-weight: bold;
+    border: 5px solid #ea8e2e;
+    font-family: Simplifica, Arial, sans-serif;
+    padding: 10px 7px 7px 10px;
+    width: 150px;
+    margin: 40px 80px 0px 0;
+}
+
+#searchButton:hover {
+    background-color: #f8f8f8;
+    color: #ea8e2e;
+    cursor: pointer;
+
+}
+
+.bookButton{
+    font-size: 20px;
+    color: #a8cbe5;
+    background-color: #f8f8f8;
+    font-weight: bold;
+    border: 3px solid #f8f8f8;
+    font-family: Simplifica, Arial, sans-serif;
+    padding: 3px 5px 0 7px;
+    margin: 0 0 0 30px;
+}
+
+.bookButton:hover {
+    background-color: #a8cbe5;
+    color: #f8f8f8;
+    cursor: pointer;
+
+}
+
+/* Change the link color to light green on hover */
+
+
+
+#checkInDay, #checkInMonth, #checkInYear, #checkOutDay, #checkOutMonth, #checkOutYear{
+    background-color: #ea8e2e;
+    color: #f8f8f8;
+    cursor: pointer;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Form layout on "contactus.html" page finish*/
+
+.invisible{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    padding: 3px 0 0px 0;
+    margin: 0px;
+    text-align: center;
+    color: #f8f8f8;
+    background-color: #278bdd;
+    clear: left;
+}
+
+.last_p{
+    clear:left;
+}
+
+footer p{
+    clear: left;
+    padding: 5px 0px 0px 0px;
+    margin: 0px;
+    font-size: 17px;
+}
+

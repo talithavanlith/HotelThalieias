@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- COMP212 Assignment Talitha van Lith August 2018 Student ID: vanta342 8078082-->
+    <title>Hotel Thaleias: Book</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="adminBookings.js"></script>
+    <script src="room-options.js"></script>
+    <script src="Cookies.js"></script>
+    <script src="chosenRooms.js"></script>
+</head>
+<body>
+<!-- Start of University of Otago Tiddlywinks page header -->
+
+<header class="header_bkg">
+    <h1 id="header1">Hotel</h1>
+    <figure>
+        <img class="header_image" src="./images/logoSmall.png" alt="Hotel logo" width="80px">
+    </figure>
+    <h1>Thaleias</h1>
+</header>
+<!-- End of University of Otago Tiddlywinks page header -->
+<nav>
+    <ul class="nav">
+        <li class="button"><a href="./index.html"> home </a>
+        </li>
+        <li class="button"><a href="./rooms.html">rooms</a>
+        </li>
+        <li class="button"><a href="./findus.html">find us</a>
+        </li>
+        <li class="button"><a class="active">book</a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <h2 class="less-margin">Enter the dates you wish to stay:</h2>
+    <p>
+        <fieldset>
+        <label for="checkInDay">Check In:&emsp;&emsp;</label>
+            <select name="checkInDay" id="checkInDay">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>&emsp;&emsp;&emsp;&emsp;<select name="checkInMonth" id="checkInMonth">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select> &emsp;&emsp;&emsp;&emsp;<select name="checkInYear" id="checkInYear">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <label for="checkOutDay">Check Out:&emsp;&emsp;</label>
+            <select name="checkOutDay" id="checkOutDay">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>&emsp;&emsp;&emsp;&emsp;<select name="checkOutMonth" id="checkOutMonth">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select> &emsp;&emsp;&emsp;&emsp;<select name="checkOutYear" id="checkOutYear">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input id="searchButton" type="submit" value="Search">
+    <p id="error" style="color: red; padding: 0px; margin: 0px"></p>
+</fieldset>
+    </p>
+    <!-- show hide below depending on which ones are available (i.e. don't show any when form isn't filled out -->
+    <h2 class="optionsTitle">Available rooms for your period of stay:</h2>
+
+    <h2 class="booked">Your pending bookings:</h2>
+</section>
+<footer>
+    <p>~~ This website was created for a University project. The content is largely fictional and no services are actually being offered ~~
+    </p>
+</footer>
+</body>
+</html>
